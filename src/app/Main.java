@@ -5,13 +5,18 @@ public class Main {
         System.out.println("Converter v1.0");
 
         double mils = 10;
+        double kilomt = 10;
         double kilometers = milesToKilometers(mils);
-        System.out.println("Result is " + mils + " миль це " + kilometers + " кілометрів");
+        double miles = kilometersToMiles(kilomt);
+        System.out.println("Result is " + miles + " миль і " + kilometers + " кілометрів");
 
     }
 
     public static double milesToKilometers(double mils) {
         return mils  * 1.60934;
+    }
+    public static double kilometersToMiles(double kilomt) {
+        return kilomt * 0.621371;
     }
 
 }
